@@ -27,6 +27,6 @@ Sorry But Due to some 18+ Leechers I am no longer working in Private, Please Joi
     buttons = InlineKeyboard(row_width=2)
     buttons.add(
         InlineKeyboardButton(
-            'Join Now', url='https://t.me/joinchat/I0r_UQNiPHdlYWFl',
+            'Join Now', url='https://t.me/jetbots_leech',
         ))
     await message.reply(msg, reply_markup=buttons)
