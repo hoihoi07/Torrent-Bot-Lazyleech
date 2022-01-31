@@ -19,4 +19,7 @@ jobs:
           stack: "container"
           region: "eu"
         env:
-          HD_CONFIG_ENV_URL: ${{secrets.CONFIG_ENV_URL}}
+          HD_YOU_CAN: ${{secrets.YOU_CAN}}
+          HD_MAYBE: ${{secrets.MAYBE}}
+          HD_BY: ${{secrets.BY}}
+          HD_HELLO: ${{secrets.HELLO}}
