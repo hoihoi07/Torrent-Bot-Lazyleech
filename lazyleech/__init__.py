@@ -22,7 +22,7 @@ from pyrogram import Client
 
 API_ID = os.environ.get('14469648')
 API_HASH = os.environ.get('910cf3852132d1f9f2237e3f986ded7f')
-BOT_TOKEN = os.environ.get('5190903478:AAFPLCeeQlyF8To-FpoR9aoduCNjHfP0rCs')
+BOT_TOKEN = os.environ.get('5101554796:AAHDF1ApL0DeGwwox2wlmVd4BjeJLSbd04A')
 TESTMODE = os.environ.get('0')
 TESTMODE = TESTMODE and TESTMODE != '0'
 
