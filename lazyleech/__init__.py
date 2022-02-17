@@ -20,33 +20,33 @@ import aiohttp
 from io import BytesIO, StringIO
 from pyrogram import Client
 
-API_ID = os.environ.get('14469648')
-API_HASH = os.environ.get('910cf3852132d1f9f2237e3f986ded7f')
-BOT_TOKEN = os.environ.get('5101554796:AAHDF1ApL0DeGwwox2wlmVd4BjeJLSbd04A')
-TESTMODE = os.environ.get('0')
+API_ID = ('14469648')
+API_HASH = ('910cf3852132d1f9f2237e3f986ded7f')
+BOT_TOKEN = ('5101554796:AAHDF1ApL0DeGwwox2wlmVd4BjeJLSbd04A')
+TESTMODE = ('0')
 TESTMODE = TESTMODE and TESTMODE != '0'
 
-EVERYONE_CHATS = os.environ.get('-1001597086433')
+EVERYONE_CHATS = ('-1001597086433')
 EVERYONE_CHATS = list(map(int, EVERYONE_CHATS.split(' '))) if EVERYONE_CHATS else []
-ADMIN_CHATS = os.environ.get('ADMIN_CHATS')
+ADMIN_CHATS = ('ADMIN_CHATS')
 ADMIN_CHATS = list(map(int, ADMIN_CHATS.split(' '))) if ADMIN_CHATS else []
 ALL_CHATS = EVERYONE_CHATS + ADMIN_CHATS
 # LICHER_* variables are for @animebatchstash and similar, not required
-LICHER_CHAT = os.environ.get('LICHER_CHAT', '')
+LICHER_CHAT = ('LICHER_CHAT', '')
 try:
     LICHER_CHAT = int(LICHER_CHAT)
 except ValueError:
     pass
-LICHER_STICKER = os.environ.get('LICHER_STICKER')
-LICHER_FOOTER = os.environ.get('LICHER_FOOTER', '').encode().decode('unicode_escape')
-LICHER_PARSE_EPISODE = os.environ.get('LICHER_PARSE_EPISODE')
+LICHER_STICKER = ('LICHER_STICKER')
+LICHER_FOOTER = ('LICHER_FOOTER', '').encode().decode('unicode_escape')
+LICHER_PARSE_EPISODE = ('LICHER_PARSE_EPISODE')
 LICHER_PARSE_EPISODE = LICHER_PARSE_EPISODE and LICHER_PARSE_EPISODE != '0'
 
-PROGRESS_UPDATE_DELAY = int(os.environ.get('PROGRESS_UPDATE_DELAY', 10))
-MAGNET_TIMEOUT = int(os.environ.get('LEECH_TIMEOUT', 60))
-LEECH_TIMEOUT = int(os.environ.get('LEECH_TIMEOUT', 300))
-ARIA2_SECRET = os.environ.get('ARIA2_SECRET', '')
-IGNORE_PADDING_FILE = os.environ.get('IGNORE_PADDING_FILE', '1')
+PROGRESS_UPDATE_DELAY = int(('PROGRESS_UPDATE_DELAY', 10))
+MAGNET_TIMEOUT = int(('LEECH_TIMEOUT', 60))
+LEECH_TIMEOUT = int(('LEECH_TIMEOUT', 300))
+ARIA2_SECRET = ('ARIA2_SECRET', '')
+IGNORE_PADDING_FILE = ('IGNORE_PADDING_FILE', '1')
 IGNORE_PADDING_FILE = IGNORE_PADDING_FILE and IGNORE_PADDING_FILE != '0'
 
 SOURCE_MESSAGE = '''
